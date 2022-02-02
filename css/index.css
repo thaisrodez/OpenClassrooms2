@@ -1,0 +1,78 @@
+@import url(Components/header.css);
+@import url(Components/searchBar.css);
+@import url(Components/filters.css);
+@import url(Components/cards.css);
+@import url(Components/img-cards.css);
+@import url(Components/footer.css);
+
+* {
+  box-sizing: border-box; /* Opera/IE 8+ */
+  -moz-box-sizing: border-box; /* Firefox, autres Gecko */
+  -webkit-box-sizing: border-box; /* Safari/Chrome, autres WebKit */
+  font-family: "Raleway", sans-serif;
+}
+
+main {
+  margin: 32px auto;
+  padding: 0px 32px;
+}
+
+h1 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 18px;
+  margin: 0px;
+}
+
+h3 {
+  font-size: 16px;
+  margin: 0px;
+}
+
+p {
+  margin-top: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.info {
+  display: flex;
+  gap: 8px;
+  margin: 16px 0px;
+}
+
+.circle {
+  height: 22px;
+  width: 22px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border: #f2f2f2 1px solid;
+  border-radius: 50%;
+}
+
+.info i {
+  color: #0065fc;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .mobile-padding {
+    padding: 0px 16px;
+  }
+
+  .circle {
+    width: 24px;
+  }
+}

@@ -1,0 +1,176 @@
+.rentals {
+  display: flex;
+  gap: 48px;
+  width: 100%;
+  height: fit-content;
+  margin-top: 16px;
+}
+
+.rounded-grey {
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  padding: 32px;
+}
+
+.accommodation {
+  width: 66%;
+}
+
+.accommodation > h2 {
+  margin-top: 24px;
+}
+
+.popular {
+  width: 33%;
+}
+
+.popular-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popular-title i {
+  font-size: 24px;
+}
+
+/* Common cards */
+
+.card {
+  padding: 4px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.1);
+}
+
+.rentals a:hover {
+  color: #0065fc;
+}
+
+.card-body {
+  padding: 4%;
+}
+
+.card-body p {
+  margin: 3% 0;
+}
+
+.stars {
+  font-size: 13px;
+}
+
+.blue-star {
+  color: #0065fc;
+}
+
+.grey-star {
+  color: #d8d8d8;
+}
+
+/* Cards accomodation */
+.cards-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 32px;
+  margin: 16px 0;
+}
+
+.vertical-card {
+  min-height: 100%;
+  width: 250px;
+}
+
+.vertical-card img {
+  border-radius: 20px 20px 0px 0px;
+  width: 100%;
+  height: inherit;
+  max-height: 136px;
+  object-fit: cover;
+  object-position: center;
+}
+/* Cards popular */
+.horizontal-cards a {
+  width: 100%;
+}
+
+.horizontal-card {
+  width: 100%;
+  /* height: 140px; */
+  margin-bottom: 32px;
+  display: flex;
+}
+
+.horizontal-card img {
+  border-radius: 20px 0px 0px 20px;
+  width: 120px;
+  height: 132px;
+  object-fit: cover;
+}
+
+.horizontal-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.horizontal-body p {
+  margin: 3% 0;
+}
+
+@media screen and (max-width: 992px) {
+  .rentals {
+    flex-direction: column-reverse;
+    gap: 16px;
+  }
+
+  .popular {
+    width: 100%;
+    background-color: #f2f2f2;
+  }
+
+  .accommodation {
+    width: 100%;
+    background-color: white;
+  }
+
+  .horizontal-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+
+  .horizontal-cards a {
+    width: 47%;
+  }
+
+  .horizontal-card {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .horizontal-cards {
+    gap: 0px;
+  }
+
+  .horizontal-cards a {
+    margin-bottom: 16px;
+    width: 100%;
+  }
+
+  .rounded-grey {
+    border-radius: 0px;
+    padding: 16px;
+  }
+
+  .cards-grid {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 16px;
+  }
+
+  .vertical-card {
+    width: 100%;
+  }
+}

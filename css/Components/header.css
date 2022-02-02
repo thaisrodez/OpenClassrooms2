@@ -1,0 +1,51 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 48px;
+}
+
+header img {
+  height: 48px;
+  margin-top: 32px;
+}
+
+nav {
+  display: flex;
+  gap: 40px;
+}
+
+nav a {
+  padding-top: 32px;
+  transition: 0.3s;
+}
+nav a:hover,
+a:active {
+  color: #0065fc;
+  border-top: #0065fc 2px solid;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+
+  nav {
+    justify-content: space-evenly;
+    gap: 0px;
+  }
+
+  nav a {
+    padding-bottom: 12px;
+    border-bottom: #f2f2f2 2px solid;
+    width: 50vw;
+    text-align: center;
+  }
+
+  nav a:hover,
+  a:active {
+    color: #0065fc;
+    border-top: none;
+    border-bottom: #0065fc 2px solid;
+  }
+}
