@@ -134,6 +134,18 @@
     background-color: white;
   }
 
+  .cards-grid {
+    justify-content: space-between;
+  }
+
+  .cards-grid a {
+    width: 47%;
+  }
+
+  .vertical-card {
+    width: 100%;
+  }
+
   .horizontal-cards {
     display: flex;
     flex-wrap: wrap;
@@ -141,11 +153,19 @@
   }
 
   .horizontal-cards a {
-    width: 47%;
+    width: 30%;
   }
 
   .horizontal-card {
     margin-bottom: 0px;
+    flex-direction: column;
+    min-height: 100%;
+  }
+
+  .horizontal-card img {
+    border-radius: 20px 20px 0px 0px;
+    width: 100%;
+    height: 136px;
   }
 }
 
@@ -170,7 +190,7 @@
     gap: 16px;
   }
 
-  .vertical-card {
+  .cards-grid a {
     width: 100%;
   }
 }
