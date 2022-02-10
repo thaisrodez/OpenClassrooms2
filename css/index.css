@@ -41,6 +41,8 @@ a {
   color: black;
 }
 
+/* Info icon */
+
 .info {
   display: flex;
   gap: 8px;
