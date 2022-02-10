@@ -1,3 +1,4 @@
+/* Main section */
 .rentals {
   display: flex;
   gap: 48px;
@@ -12,6 +13,8 @@
   padding: 32px;
 }
 
+/* Accomodation section */
+
 .accommodation {
   width: 66%;
 }
@@ -19,6 +22,8 @@
 .accommodation > h2 {
   margin-top: 24px;
 }
+
+/* Popular section */
 
 .popular {
   width: 33%;
@@ -55,7 +60,7 @@
   margin: 3% 0;
 }
 
-.stars {
+.card-stars {
   font-size: 13px;
 }
 
@@ -72,39 +77,48 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 32px;
+  gap: 22px;
   margin: 16px 0;
 }
 
 .vertical-card {
   min-height: 100%;
-  width: 250px;
+  width: 30%;
+}
+
+.vertical-img {
+  overflow: hidden;
+  height: 136px;
 }
 
 .vertical-card img {
   border-radius: 20px 20px 0px 0px;
   width: 100%;
   height: inherit;
-  max-height: 136px;
   object-fit: cover;
   object-position: center;
 }
+
 /* Cards popular */
 .horizontal-cards a {
   width: 100%;
+  display: flex;
 }
 
 .horizontal-card {
   width: 100%;
-  /* height: 140px; */
   margin-bottom: 32px;
-  display: flex;
+}
+
+.horizontal-img {
+  width: 120px;
+  height: 144px;
 }
 
 .horizontal-card img {
   border-radius: 20px 0px 0px 20px;
-  width: 120px;
-  height: 132px;
+  width: inherit;
+  height: inherit;
   object-fit: cover;
 }
 
@@ -118,6 +132,7 @@
   margin: 3% 0;
 }
 
+/* Tablet */
 @media screen and (max-width: 992px) {
   .rentals {
     flex-direction: column-reverse;
@@ -138,28 +153,24 @@
     justify-content: space-between;
   }
 
-  .cards-grid a {
-    width: 47%;
-  }
-
-  .vertical-card {
-    width: 100%;
-  }
-
   .horizontal-cards {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
     gap: 32px;
   }
 
-  .horizontal-cards a {
+  .horizontal-card {
     width: 30%;
   }
-
-  .horizontal-card {
+  .horizontal-card a {
     margin-bottom: 0px;
     flex-direction: column;
     min-height: 100%;
+  }
+
+  .horizontal-img {
+    width: inherit;
   }
 
   .horizontal-card img {
@@ -169,14 +180,31 @@
   }
 }
 
+/* Mobile */
 @media screen and (max-width: 768px) {
   .horizontal-cards {
     gap: 0px;
+    flex-direction: column;
+  }
+  .horizontal-card {
+    width: 100%;
+    margin-bottom: 32px;
+  }
+  .horizontal-cards a {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
   }
 
-  .horizontal-cards a {
-    margin-bottom: 16px;
-    width: 100%;
+  .horizontal-img {
+    width: 140px;
+  }
+
+  .horizontal-card img {
+    border-radius: 20px 0px 0px 20px;
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
   }
 
   .rounded-grey {
@@ -190,7 +218,7 @@
     gap: 16px;
   }
 
-  .cards-grid a {
+  .vertical-card {
     width: 100%;
   }
 }
