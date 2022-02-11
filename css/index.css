@@ -12,6 +12,10 @@
   font-family: "Raleway", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 main {
   margin: 32px auto;
   padding: 0px 32px;
