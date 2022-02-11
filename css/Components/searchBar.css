@@ -1,5 +1,5 @@
 form {
-  position: relative;
+  display: flex;
 }
 
 label {
@@ -7,14 +7,11 @@ label {
   padding: 12px 16px;
   border-radius: 8px 0px 0px 8px;
   margin: 0;
-  position: absolute;
 }
 
 .border-grey {
   padding: 12px 12px 11px 12px;
   border: #f1f1f1 1px solid;
-  position: absolute;
-  left: 44px;
   width: 190px;
 }
 
@@ -24,8 +21,6 @@ label {
   color: white;
   padding: 12px 12px 13px 12px;
   border-radius: 0px 8px 8px 0px;
-  position: absolute;
-  left: 250px;
 }
 
 .display-mobile {
@@ -33,7 +28,11 @@ label {
 }
 
 /* Mobile */
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
+  input #search {
+    width: 200px;
+  }
+
   .display-desktop {
     display: none;
   }
@@ -42,7 +41,12 @@ label {
     display: inline;
   }
 
+  .border-grey {
+    width: 100%;
+  }
+
   .blue-button {
     border-radius: 12px;
+    margin-left: -10px;
   }
 }
