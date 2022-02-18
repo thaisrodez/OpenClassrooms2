@@ -148,6 +148,10 @@
     background-color: white;
   }
 
+  .rounded-grey {
+    padding: 24px;
+  }
+
   /* horizontal cards tablet */
   .horizontal-cards {
     display: flex;
