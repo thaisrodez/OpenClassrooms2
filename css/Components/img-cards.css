@@ -69,6 +69,7 @@
 
 .activity-title {
   padding: 16px;
+  white-space: nowrap;
 }
 
 /* Tablet */
