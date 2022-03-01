@@ -68,7 +68,7 @@
 }
 
 .activity-title {
-  padding: 16px;
+  padding: 12px 24px;
   white-space: nowrap;
 }
 
@@ -115,7 +115,7 @@
   }
 
   .activity-title {
-    padding: 16px;
+    padding: 12px 24px;
   }
 
   .activity-title h3 {

@@ -46,11 +46,12 @@ a {
 }
 
 /* Info icon */
-
 .info {
   display: flex;
   gap: 8px;
-  margin: 16px 0px;
+  margin-top: 32px;
+  margin-bottom: 24px;
+  font-weight: 200;
 }
 
 .circle {
